@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&family=Playwrite+CU:wght@100..400&family=SUSE:wght@100..800&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+
+}
+
+.font {
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+html, body {
+  width: 100%;
+  background-color: #121212 !important;
+  color: white !important;
+  height: 100%;
+}
+
+/* ~/scrollbar.css */
+
+/* Default (light) theme */
+:root {
+
+	--scrollbar-track: transparent;
+	--scrollbar-thumb: rgb(162, 255, 122);
+	--scrollbar-thumb-hover: rgb(150, 240, 128);
+
+	--scrollbar-width: 1.1px;
+}
+/* Default (light) theme */
+
+/* Dark theme */
+
+/* Dark theme */
+
+/* Firefox */
+
+/* Firefox */
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  margin-top: 1000px;
+  background-color: transparent;
+  color: transparent;
+	width: var(--scrollbar-width); /* vertical scrollbar */
+
+
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-thumb);
+	border-radius: var(--scrollbar-width);
+	border: calc(var(--scrollbar-width) / 100) solid var(--page-background);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: var(--scrollbar-thumb-hover);
+}
+/* Chrome, Edge, Safari */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
